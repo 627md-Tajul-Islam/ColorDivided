@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+
+        <g class="whole" id="arch" stroke="#EF476F" fill="none" stroke-miterlimit="10" stroke-width="100">
+            <path class="arch1" d="M265,362.5a125,125,0,0,1,250,0"  />
+            <path class="arch2" d="M515,362.5a125,125,0,0,1,250,0"  />
+        </g>
+    </defs>
+    <g class="rippleGroup" stroke="#EF476F" stroke-width="0.5" fill="none">
+        <ellipse class="rip" cx="560" cy="362" rx="0" ry="0" />
+        <ellipse class="rip" cx="560" cy="362" rx="0" ry="0" />
+        <ellipse class="rip" cx="560" cy="362" rx="0" ry="0" />
+    </g>
+    <use xlink:href="#arch"/>
+    <use xlink:href="#arch" class="upsideDown" opacity="0.05"/>
+    <g class="particleContainer"  fill="#EF476F">
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+        <circle cx="0" cy="0" r="1" opacity="0"/>
+    </g>
+
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
